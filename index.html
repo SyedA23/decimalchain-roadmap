@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <title>Decimal Chain</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <nav class="primary-navbar">
+        <ul>
+          <li>
+            <div class="logo">
+              <img src="https://decimalchain.com/_nuxt/img/del_mobile.caaf033.svg" alt="">
+              <h1>Decimal</h1>
+            </div>
+          </li>
+          <li><a href="https://decimalchain.com/#exchanges" target="_blank">Exchanges</a></li>
+          <li><a href="https://decimalchain.com/#team" target="_blank">Team</a></li>
+          <li><a href="https://decimalchain.com/#wallet" target="_blank">Wallet</a></li>
+          <li id="nav-tools">Tools <i class="fas fa-chevron-down "></i>
+            <i class="fas fa-chevron-up nav-arrow"></i>
+          </li>
+        </ul>
+      </nav>
+      <div class="secondary-navbar">
+        <ul>
+          <li><a href="https://console.decimalchain.com/" target="_blank">Console</a></li>
+          <li><a href="https://explorer.decimalchain.com/" target="_blank">Explorer</a></li>
+          <li><a href="https://status.decimalchain.com/" target="_blank">Status</a></li>
+          <li><a href="https://calculator.decimalchain.com/" target="_blank">Calculator</a></li>
+          <li><a href="https://help.decimalchain.com/" target="_blank">Help</a></li>
+      </div>
+      <div class="get-app"><a href="https://decimalchain.com/#app" target="_blank">Get the app</a></div>
+    </div>
+
+    <div class="roadmap">
+      <div class="wrapper">
+        <div class="roadmap-content">
+          <div class="roadmap-text">
+            <div class="roadmap-tag">roadmap</div>
+            <h2 class="roadmap-heading">What we’ve achieved, with more to come</h2>
+          </div>
+          <div class="roadmap-track">
+            <div class="roadmap-track-line">
+              <img src="https://decimalchain.com/_nuxt/img/path.17b67a5.svg" alt="roadmap-track-img">
+            </div>
+          </div>
+          <div class="roadmap-card">
+            <div class="roadmap-card-header">
+              <div class="roadmap-card-icon">
+                <img src="https://decimalchain.com/_nuxt/img/apps.685484b.svg" alt="roadmap-card-icon" class="card-icon">
+              </div>
+              <div class="roadmap-card-status">
+                <i class="fas fa-check"></i> done
+              </div>
+            </div>
+            <div class="roadmap-card-body">
+              <h3 class="roadmap-card-heading">
+                Q2 2019
+              </h3>
+              <div class="roadmap-card-text">Deploying the main network. Launch the original masterminds. Starting block
+                browser. Starting the user console.</div>
+            </div>
+            <div class="roadmap-card-footer">
+              <button class="roadmap-card-button button-left" onclick="handlePrev()"><i class="fas fa-arrow-left"></i>prev</button>
+              <button class="roadmap-card-button button-right" onclick="handleNext()">next<i class="fas fa-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="roadmap-coin">
+            <img src="https://decimalchain.com/_nuxt/img/del_dark.7e6ef1f.svg" alt="roadmap-coin">
+          </div>
+        </div>
+      </div>
+      <div class="roadmap-mobile-separator-line">
+        <div class="separator-line-container">
+          <div class="separator-line separator-line-left"></div>
+          <div class="separator-line-center"></div>
+          <div class="separator-line separator-line-right"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+<script src="./script.js"></script>
+
+</html>

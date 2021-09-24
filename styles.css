@@ -1,0 +1,450 @@
+/* CSS reset code */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/********* Style Roadmap  Section Start Here *********/
+
+body {
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #212429;
+}
+
+/* Style Section of Navbar Start Here */
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(
+    101deg,
+    rgba(245, 247, 250, 0.12),
+    rgba(245, 247, 250, 0.06) 52%,
+    rgba(245, 247, 250, 0)
+  );
+  font-size: 16px;
+}
+
+.navbar .logo {
+  display: flex;
+  position: relative;
+}
+
+.logo img {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: -28%;
+}
+
+h1 {
+  margin-left: 45px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.primary-navbar {
+  width: 60%;
+  display: flex;
+}
+
+.primary-navbar ul {
+  width: 80%;
+  padding: 28px 0;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 600;
+}
+
+.primary-navbar li {
+  cursor: pointer;
+}
+
+.primary-navbar li a,
+.secondary-navbar li a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.primary-navbar .fa-chevron-down,
+.primary-navbar .fa-chevron-up {
+  color: #e0e0ff;
+  font-weight: 400;
+}
+
+.secondary-navbar {
+  position: absolute;
+  display: none;
+  background-image: linear-gradient(
+    101deg,
+    rgba(245, 247, 250, 0.12),
+    rgba(245, 247, 250, 0.06) 52%,
+    rgba(245, 247, 250, 0)
+  );
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  position: absolute;
+  flex-direction: column;
+  top: 78px;
+  left: 35%;
+  border-radius: 14px;
+  z-index: 3;
+}
+
+.secondary-navbar li {
+  padding: 20px 120px 20px 30px;
+}
+
+.active-navbar {
+  display: flex;
+}
+
+.nav-tools-shades {
+  color: #e0e0ff;
+  backdrop-filter: blur(40px);
+}
+
+#nav-tools .nav-arrow {
+  display: none;
+}
+
+.get-app {
+  height: 46px;
+  padding: 12px 22px;
+  margin-top: 14px;
+  margin-right: 2%;
+  display: block;
+  background: linear-gradient(113deg, #0fa, #4579f5 53%, #9c42f5);
+  border-radius: 12px;
+  box-shadow: 0 8px 8px -4px rgb(69 121 245 / 12%),
+    0 16px 24px 0 rgb(69 121 245 / 24%), 0 2px 4px -1px rgb(27 10 82 / 12%),
+    0 0 1px 0 rgb(69 121 245 / 24%);
+}
+
+.get-app:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 12px -4px rgb(69 121 245 / 12%),
+    0 24px 32px 0 rgb(69 121 245 / 24%), 0 4px 4px -1px rgb(27 10 82 / 12%),
+    0 1px 1px 0 rgb(69 121 245 / 24%);
+}
+
+.get-app a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* Style Section of Navbar End Here */
+
+.wrapper {
+  max-width: 1360px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.roadmap-content {
+  margin-top: 120px;
+  position: relative;
+}
+
+.roadmap-text {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.roadmap-tag,
+.roadmap-card-status {
+  width: fit-content;
+  margin-bottom: 20px;
+  padding: 4px 8px;
+  display: inline-block;
+  background-color: #202930;
+  border-radius: 12px;
+  color: #01b5f6;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.roadmap-track {
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.roadmap-track-line {
+  transition: 2s ease;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  z-index: -1;
+  transform-origin: center;
+  transform: translate(-30%, 32%) scale(0.85);
+}
+
+.roadmap-track-line img {
+  max-width: unset;
+  display: block;
+}
+
+/* Style of Roadmap Card Start Here */
+.roadmap-card {
+  width: 365px;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  padding: 40px;
+  background-image: linear-gradient(
+    rgba(245, 247, 250, 0.12),
+    rgba(245, 247, 250, 0.06) 100%,
+    rgba(245, 247, 250, 0)
+  );
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  box-shadow: 8px 8px 24px 0 rgb(9 13 20 / 40%),
+    -4px -4px 8px 0 rgb(224 224 255 / 4%), 0 1px 1px 0 rgb(9 13 20 / 40%);
+  border: 1px solid rgba(245, 247, 250, 0.06);
+  border-radius: 24px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.roadmap-card-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.roadmap-card-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(113deg, #0fa, #4579f5 53%, #9c42f5);
+}
+
+.roadmap-card-status {
+  color: #0fa;
+  height: 25px;
+}
+
+.roadmap-card-heading {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: 'Rubik', sans-serif;
+  margin: 20px 0 16px;
+}
+
+.roadmap-card-text {
+  height: 90px;
+  color: #e0e0ff;
+  font-size: 14px;
+  line-height: 1.6;
+  display: flex;
+  align-items: center;
+}
+
+.roadmap-card-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+.roadmap-card-button {
+  padding: 12px 15px;
+  background: #292c30;
+  border-radius: 12px;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Prompt', sans-serif;
+  outline: none;
+  cursor: pointer;
+}
+
+.fa-arrow-left {
+  margin-right: 10px;
+  color: lightgrey;
+}
+
+.fa-arrow-right {
+  margin-left: 10px;
+  color: lightgrey;
+}
+
+/* Style of Roadmap Card End Here */
+
+.roadmap-coin {
+  position: absolute;
+  top: 90%;
+  right: 5%;
+  z-index: -1;
+}
+
+.roadmap-mobile-separator-line {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper,
+  .roadmap-text {
+    width: 90%;
+  }
+  
+  .navbar,
+  .roadmap-coin,
+  .roadmap-track {
+    display: none;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .roadmap-content {
+    margin-top: 50px;
+  }
+
+  .roadmap-tag {
+    width: fit-content;
+  }
+
+  .roadmap-card {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+
+  .roadmap-card-heading {
+    font-size: 24px;
+  }
+
+  .roadmap-mobile-separator-line {
+    position: relative;
+    display: grid;
+    margin-top: 40px;
+  }
+
+  .separator-line-container {
+    display: grid;
+    grid-template-columns: 1fr 48px 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .separator-line {
+    height: 8px;
+    width: 100%;
+  }
+
+  .separator-line-left {
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 187, 255, 0) 12%,
+      #0bf 100%,
+      rgba(0, 187, 255, 0) 0
+    );
+  }
+
+  .separator-line-right {
+    background-image: linear-gradient(
+      270deg,
+      rgba(0, 187, 255, 0) 12%,
+      #0bf 100%,
+      rgba(0, 187, 255, 0) 0
+    );
+  }
+
+  .separator-line-center {
+    display: block;
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    z-index: -1;
+    position: inherit;
+    background-image: linear-gradient(135deg, #0fa, #4579f5 53%, #9c42f5);
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .roadmap-card {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+/********* Style Roadmap Section End Here *********/
